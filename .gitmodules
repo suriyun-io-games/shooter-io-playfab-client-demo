@@ -1,0 +1,3 @@
+[submodule "PlayfabClient"]
+	path = PlayfabClient
+	url = ../dot-io-playfab-client.git
