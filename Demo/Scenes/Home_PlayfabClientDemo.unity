@@ -1547,13 +1547,13 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   selectableRegions:
   - title: Eu
-    regionCode: 0
+    regionCode: eu
   - title: Us
-    regionCode: 1
+    regionCode: us
   - title: Asia
-    regionCode: 2
+    regionCode: asia
   - title: Jp
-    regionCode: 3
+    regionCode: jp
   dropdownRegion: {fileID: 2055091227}
   uiDisconnected: {fileID: 2055091225}
   uiConnected: {fileID: 1398120462}
