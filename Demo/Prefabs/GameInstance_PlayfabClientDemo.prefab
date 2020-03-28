@@ -9,21 +9,21 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1169586283428084}
+  m_RootGameObject: {fileID: 1495923686762920}
   m_IsPrefabAsset: 1
---- !u!1 &1169586283428084
+--- !u!1 &1495923686762920
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4777157847790626}
-  - component: {fileID: 114399739619211160}
-  - component: {fileID: 114606359588884596}
-  - component: {fileID: 114538502915651306}
-  - component: {fileID: 114259321938044182}
-  - component: {fileID: 114623440720683908}
+  - component: {fileID: 4667953857500928}
+  - component: {fileID: 114333443747914294}
+  - component: {fileID: 114123418136142324}
+  - component: {fileID: 114157956628195230}
+  - component: {fileID: 114913158281459414}
+  - component: {fileID: 114288897731059288}
   m_Layer: 0
   m_Name: GameInstance_PlayfabClientDemo
   m_TagString: Untagged
@@ -31,12 +31,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4777157847790626
+--- !u!4 &4667953857500928
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1169586283428084}
+  m_GameObject: {fileID: 1495923686762920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -44,34 +44,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114259321938044182
+--- !u!114 &114123418136142324
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1169586283428084}
+  m_GameObject: {fileID: 1495923686762920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a0083004355179479cf5b2225010743, type: 3}
+  m_Script: {fileID: 11500000, guid: 381532b762211664d80ffd2a4ade737a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refreshDuration: 3
-  onRefresh:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onError:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: PlayfabSave+ErrorEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
---- !u!114 &114399739619211160
+  androidGameId: 1559218
+  iosGameId: 1559219
+  testMode: 1
+  adsOverrideActions: []
+  products:
+  - {fileID: 11400000, guid: 71b081bc5c9b0ac4092991c23559bcf4, type: 2}
+  currencies:
+  - id: GOLD
+    startAmount: 1000
+    name: Gold
+    symbol: G.
+  rewardVideoPlacement: rewardedVideo
+  adsRewards:
+  - currencies:
+    - id: GOLD
+      amount: 100
+    items: []
+    randomWeight: 2
+  save: {fileID: 0}
+--- !u!114 &114157956628195230
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1169586283428084}
+  m_GameObject: {fileID: 1495923686762920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca25bac5b3477f4baacfea3add65920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114288897731059288
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1495923686762920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb6036a4adaed647afeac13690bf051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameInstance: {fileID: 114333443747914294}
+  monetizationManager: {fileID: 114123418136142324}
+  exportingCatalogVersion: Catalog-1
+--- !u!114 &114333443747914294
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1495923686762920}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62586585004f62d4e8ae7cc6a577ef60, type: 3}
@@ -86,16 +119,14 @@ MonoBehaviour:
     availableGameRules:
     - {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
     - {fileID: 11400000, guid: 8a508bd358197df43a08e6a6e92b9532, type: 2}
-    - {fileID: 11400000, guid: c4903d5db157a914f945e3662788b79d, type: 2}
   - mapName: OldBattle
     scene:
-      sceneAsset: {fileID: 102900000, guid: a5cc9d207f9bf274bb65271eef7d334d, type: 3}
+      sceneAsset: {fileID: 102900000, guid: 4867614086279c34c9851fe84584f1c6, type: 3}
       sceneName: OldBattle
     previewImage: {fileID: 21300000, guid: 42d8e3e193236694392dd7139e4cac0c, type: 3}
     availableGameRules:
     - {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
     - {fileID: 11400000, guid: 8a508bd358197df43a08e6a6e92b9532, type: 2}
-    - {fileID: 11400000, guid: c4903d5db157a914f945e3662788b79d, type: 2}
   - mapName: BattleRoyale
     scene:
       sceneAsset: {fileID: 102900000, guid: 544be37376f7bc04fbd1f936db394efa, type: 3}
@@ -136,57 +167,25 @@ MonoBehaviour:
   characterLayer: 8
   showJoystickInEditor: 0
   watchAdsRespawnPlacement: respawnPlacement
---- !u!114 &114538502915651306
+--- !u!114 &114913158281459414
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1169586283428084}
+  m_GameObject: {fileID: 1495923686762920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ca25bac5b3477f4baacfea3add65920, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a0083004355179479cf5b2225010743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114606359588884596
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1169586283428084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 381532b762211664d80ffd2a4ade737a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  androidGameId: 1559218
-  iosGameId: 1559219
-  testMode: 1
-  products:
-  - {fileID: 11400000, guid: 71b081bc5c9b0ac4092991c23559bcf4, type: 2}
-  currencies:
-  - id: GOLD
-    startAmount: 1000
-    name: Gold
-    symbol: G.
-  rewardVideoPlacement: rewardedVideo
-  adsRewards:
-  - currencies:
-    - id: GOLD
-      amount: 100
-    items: []
-    randomWeight: 2
-  save: {fileID: 114259321938044182}
---- !u!114 &114623440720683908
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1169586283428084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bb6036a4adaed647afeac13690bf051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameInstance: {fileID: 114399739619211160}
-  monetizationManager: {fileID: 114606359588884596}
-  exportingCatalogVersion: Catalog-1
+  refreshDuration: 3
+  onRefresh:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onError:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: PlayfabSave+ErrorEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
