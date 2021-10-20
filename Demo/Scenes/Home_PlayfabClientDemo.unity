@@ -678,6 +678,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1169586283428084, guid: 374554e419061454babee6543455eac1, type: 3}
+      propertyPath: m_Name
+      value: GameInstance_PlayfabClientDemo
+      objectReference: {fileID: 0}
     - target: {fileID: 4777157847790626, guid: 374554e419061454babee6543455eac1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -710,10 +714,17 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114606359588884596, guid: 374554e419061454babee6543455eac1,
-        type: 3}
-      propertyPath: currencies.Array.data[0].id
-      value: GO
+    - target: {fileID: 4777157847790626, guid: 374554e419061454babee6543455eac1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777157847790626, guid: 374554e419061454babee6543455eac1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777157847790626, guid: 374554e419061454babee6543455eac1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 374554e419061454babee6543455eac1, type: 3}

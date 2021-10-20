@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -13,31 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconTexture: {fileID: 2800000, guid: 98b16019b61b74643b5bceaf1cfffc74, type: 3}
   previewTexture: {fileID: 0}
+  category: 
   title: MachineGun
   description: 
+  pricesOption: 0
   price:
-    id: GOLD
+    id: GO
     amount: 1000
+  prices: []
   canBuyOnlyOnce: 1
   isLock: 1
   stats:
     addMaxHp: 0
     addMaxArmor: 0
     addMoveSpeed: 0
-    addInventory: 0
     addWeaponDamageRate: 0
     addReduceDamageRate: 0
+    addBlockReduceDamageRate: 0
     addArmorReduceDamage: 0
     addExpRate: 0
     addScoreRate: 0
     addHpRecoveryRate: 0
     addArmorRecoveryRate: 0
     addDamageRateLeechHp: 0
-  pickupEntity: {fileID: 114891055892155078, guid: 435067a3b77a55044ba7d0b4b2a6a4da,
-    type: 2}
   equipPosition: 0
   rightHandObject: {fileID: 1170867331954360, guid: ad69bb417c9e0a24d95618f4677d6f98,
-    type: 2}
+    type: 3}
   leftHandObject: {fileID: 0}
   shieldObject: {fileID: 0}
   attackAnimations:
@@ -45,8 +47,9 @@ MonoBehaviour:
     animationDuration: 0.15
     launchDuration: 0.1
     speed: 1
+    isAnimationForLeftHandWeapon: 0
   damagePrefab: {fileID: 114720440324133354, guid: 7b04fff58321c264eba96868b87778c3,
-    type: 2}
+    type: 3}
   damage: 12
   reloadOneAmmoAtATime: 0
   reloadDuration: 1.5
@@ -61,3 +64,4 @@ MonoBehaviour:
   clipOutFx: {fileID: 8300000, guid: c5d3fe90d9493c74682506d94c01729b, type: 3}
   clipInFx: {fileID: 8300000, guid: d7b24a9a3d680ba4082fe4ae6c226ef6, type: 3}
   emptyFx: {fileID: 8300000, guid: 26b10165fc7cad7479c93f1b54d5a62c, type: 3}
+  weaponAnimId: 0
